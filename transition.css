@@ -1,0 +1,46 @@
+section div {
+  height: 50px;
+  width: 50px;
+  background-color: teal;
+    display : block;
+  margin: 6px;
+    position: relative;
+  transition: 4s;
+}
+section:hover div {
+
+
+  margin-left: 1000px;
+}
+
+div:nth-of-type(1) {
+  transition-timing-function: ease-in;
+}
+div:nth-of-type(2) {
+  transition-timing-function: ease-out;
+}
+div:nth-of-type(3) {
+  transition-timing-function: ease-in-out;
+}
+div:nth-of-type(4) {
+  transition-timing-function: linear;
+}
+div:nth-of-type(5){
+    transition-timing-function: steps(8);
+}
+div:nth-of-type(6){
+    transition-timing-function: step-end;
+}
+div:nth-of-type(7){
+    transition-timing-function: step-start;
+}
+div:nth-of-type(8){
+    transition-timing-function: cubic-bezier(0.5, 0.5, 0.5, 0.5);
+}
+div:nth-of-type(9){
+    transition-timing-function: cubic-bezier(0.68, -0.6, 0.32, 1.6);
+}
+div:nth-of-type(10){
+    transition-timing-function: cubic-bezier(0.85, 0, 0.15, 1);
+}
+
